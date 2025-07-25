@@ -1,0 +1,97 @@
+/* Reset some basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    transition: all 0.3s ease-in-out;
+}
+
+.display {
+    width: 100%;
+    font-size: 28px;
+    padding: 15px;
+    text-align: right;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    text-align: right;
+    font-size: 20px;
+    color: #00aa00;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #eeeeee;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #dcdcdc;
+}
+
+button:active {
+    transform: scale(0.95);
+    background: #cfcfcf;
+}
+
+button[value='='] {
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+}
+
+button[value='=']:hover {
+    background: #5564d9;
+}
+
+button[value='C'] {
+    background: #ff6b6b;
+    color: white;
+    font-weight: bold;
+}
+
+button[value='C']:hover {
+    background: #e25454;
+}
